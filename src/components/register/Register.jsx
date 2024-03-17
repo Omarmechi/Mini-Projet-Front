@@ -18,7 +18,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Axios from '../../services/Axios';
 
 const Register = ({setUserConnected}) => {
-    const [registerForm, setRegisterForm] = useState(true)
+    const [registerForm, setRegisterForm] = useState(false)
     const initialRegisterValues = {
         cin : '',
         email : '',
@@ -105,7 +105,7 @@ const Register = ({setUserConnected}) => {
   return (
     <div className="register">
         <div className="formBox">
-            <div className="logo">MyIssatSo</div>
+          
             <div className="formTitle">{ registerForm ? "S'inscrire" : "Bonjour à nouveau!"}</div>
             <div className="formSubTitle">
                 { registerForm ? "Inscrivez-vous pour acceder a votre compte MyIssatSo" :
@@ -220,8 +220,11 @@ const Register = ({setUserConnected}) => {
             </Box>
            
         </div>
-        <div className="backgroundBox" style={{backgroundImage:'url(./assets/registration.png)'}}>
+   
+        <div className="backgroundBox" style={{backgroundImage:'url(./assets/registerImg.png)'}}>
         </div>
+      
+        <div className="overlay"></div>
     </div>
   )
 }

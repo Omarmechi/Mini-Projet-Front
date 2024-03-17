@@ -4,7 +4,7 @@ import { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const App = () => {
-  const [userConnected, setUserConnected] = useState(true)
+  const [userConnected, setUserConnected] = useState(false)
 
   return (
     <div>
