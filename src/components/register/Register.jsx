@@ -106,7 +106,7 @@ const Register = ({setUserConnected}) => {
     <div className="register">
         <div className="formBox">
           
-            <div className="formTitle">{ registerForm ? "S'inscrire" : "Bonjour à nouveau!"}</div>
+            <div className="formTitle">{ registerForm ? "S'inscrire" : "Se Connecter "}</div>
             <div className="formSubTitle">
                 { registerForm ? "Inscrivez-vous pour acceder a votre compte MyIssatSo" :
                  "Connectez-vous pour acceder a votre compte MyIssatSo"}
@@ -220,11 +220,16 @@ const Register = ({setUserConnected}) => {
             </Box>
            
         </div>
+       
    
         <div className="backgroundBox" style={{backgroundImage:'url(./assets/registerImg.png)'}}>
+        <p className='texte1'>Bonjour </p>
+      
+        <p  className='texte2'>Issatiens</p>
         </div>
       
         <div className="overlay"></div>
+      
     </div>
   )
 }

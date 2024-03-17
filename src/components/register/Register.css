@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Montez";
+  src: 
+       url("../../../public/fonts/Montez-Regular.ttf") 
+ 
+}
+
+@font-face {
+  font-family: "SpicyRice-Regular";
+  src: 
+       url("../../../public/fonts/SpicyRice-Regular.ttf") 
+ 
+}
+
+
 .register{
     display: flex;
     align-items: center;
@@ -20,15 +35,34 @@
    
     }
     .overlay{
-        position: absolute; /* Make the overlay element absolute */
+        position: absolute; 
   top: 0;
   left: 55%;
-  width: 45%; /* Set width and height to cover the image */
+  width: 45%;
   height: 100%;
-  background-color: rgba(95, 137, 215, 0.619); /* Set background color with transparency */
-  opacity: 0.5; /* Set the overall opacity of the overlay */
+  background-color: rgba(29, 61, 120, 0.619); 
+  opacity: 0.5; 
     }
-  
+    .texte1 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 5vw;
+        font-family: "Montez";
+        z-index: 10;
+      }
+      .texte2 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 6vw;
+        font-family: "SpicyRice-Regular";
+        z-index: 10;
+      }
 
     .formBox{
         height: 100%;
